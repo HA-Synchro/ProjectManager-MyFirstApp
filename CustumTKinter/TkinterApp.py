@@ -7,7 +7,7 @@ class EGrassApp(ctk.CTk):
         super().__init__()
 
         # 1. Window Configuration
-        self.title("E-Grass Games | Dev Dashboard")
+        self.title("Task Manager")
         self.geometry("900x600")
         
         # Grid Layout (Sidebar: Col 0, Content: Col 1)
@@ -31,9 +31,9 @@ class EGrassApp(ctk.CTk):
         self.tabview.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
         
         # Creating Tabs for your active projects
-        self.tabview.add("Cooking Tycoon")
-        self.tabview.add("The Hook")
-        self.tabview.add("Studio Goals")
+        self.tabview.add("Tab 1")
+        self.tabview.add("Tab 2")
+        self.tabview.add("Tab 3")
 
         # --- INPUT SECTION (Universal for all tabs) ---
         self.entry_frame = ctk.CTkFrame(self, fg_color="transparent")
